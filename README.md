@@ -85,7 +85,7 @@ Run these checks before any public push:
 ```sh
 git status
 git ls-files
-grep -RInE --exclude=README.md '(client_secret|refresh_token|access_token|ya29\.|AIza|BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY|/Users/|@[A-Za-z0-9.-]+\.(org|com|edu))' .
+grep -RInE --exclude-dir=.git --exclude=README.md '(client_secret|refresh_token|access_token|ya29\.|AIza|BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY|/Users/|@[A-Za-z0-9.-]+\.(org|com|edu))' .
 ```
 
 Expected result: only intentional website text. No credentials, tokens, email addresses,
