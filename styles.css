@@ -994,6 +994,14 @@ code,
   font-size: 1.08rem;
 }
 
+.policy-subtitle {
+  margin: -0.2rem 0 1rem;
+  color: var(--teal-deep);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
 .meta-line {
   display: flex;
   flex-wrap: wrap;
